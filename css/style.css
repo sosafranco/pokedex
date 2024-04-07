@@ -1,6 +1,8 @@
+/*----------------------------Font----------------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
-/*----------------------------Formateo y colores designados----------------------------*/
+/*----------------------------Reset and asigned colors----------------------------*/
 
 :root {
     --clr-black: #1c1c1c;
@@ -102,18 +104,6 @@ main {
     gap: 1rem;
 }
 
-@media screen and (min-width: 450px) {
-    .pokemon-todos {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-
-@media screen and (min-width: 700px) {
-    .pokemon-todos {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
 
 .pokemon {
     border-radius: 1rem;
@@ -203,7 +193,24 @@ main {
     border-radius: 100vmax;
 }
 
-/*----------------------------Aquí comienzan los colores de botones según tipo----------------------------*/
+
+/*----------------------------Media Queries----------------------------*/
+
+@media screen and (min-width: 450px) {
+    .pokemon-todos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+    .pokemon-todos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+/*----------------------------Colors by type----------------------------*/
 .normal {
     background-color: var(--type-normal);
     color: var(--clr-black);
